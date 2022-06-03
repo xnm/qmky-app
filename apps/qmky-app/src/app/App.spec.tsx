@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react-native';
 
-import App from './App';
+import App from '.';
 
 test('renders correctly', () => {
   const { getByTestId } = render(<App />);
