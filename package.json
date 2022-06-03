@@ -1,11 +1,13 @@
 {
-  "name": "qmky",
+  "name": "qmky-app",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "android": "npx nx run-android qmky-app",
+    "ios": "npx nx run-ios qmky-app"
   },
   "private": true,
   "dependencies": {

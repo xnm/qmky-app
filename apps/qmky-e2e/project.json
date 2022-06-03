@@ -60,5 +60,5 @@
     }
   },
   "tags": [],
-  "implicitDependencies": ["qmky"]
+  "implicitDependencies": ["qmky-app"]
 }

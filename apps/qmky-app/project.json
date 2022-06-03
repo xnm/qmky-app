@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/qmky/src",
+  "sourceRoot": "apps/qmky-app/src",
   "projectType": "application",
   "targets": {
     "start": {
@@ -21,11 +21,11 @@
     },
     "bundle-ios": {
       "executor": "@nrwl/react-native:bundle",
-      "outputs": ["apps/qmky/build"],
+      "outputs": ["apps/qmky-app/build"],
       "options": {
         "entryFile": "src/main.tsx",
         "platform": "ios",
-        "bundleOutput": "dist/apps/qmky/ios/main.jsbundle"
+        "bundleOutput": "dist/apps/qmky-app/ios/main.jsbundle"
       }
     },
     "run-android": {
@@ -35,8 +35,8 @@
     "build-android": {
       "executor": "@nrwl/react-native:build-android",
       "outputs": [
-        "apps/qmky/android/app/build/outputs/bundle",
-        "apps/qmky/android/app/build/outputs/apk"
+        "apps/qmky-app/android/app/build/outputs/bundle",
+        "apps/qmky-app/android/app/build/outputs/apk"
       ],
       "options": {}
     },
@@ -45,7 +45,7 @@
       "options": {
         "entryFile": "src/main.tsx",
         "platform": "android",
-        "bundleOutput": "dist/apps/qmky/android/main.jsbundle"
+        "bundleOutput": "dist/apps/qmky-app/android/main.jsbundle"
       }
     },
     "sync-deps": {
@@ -60,14 +60,14 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/qmky/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/qmky-app/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/qmky"],
+      "outputs": ["coverage/apps/qmky-app"],
       "options": {
-        "jestConfig": "apps/qmky/jest.config.ts",
+        "jestConfig": "apps/qmky-app/jest.config.ts",
         "passWithNoTests": true
       }
     }

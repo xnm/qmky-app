@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'qmky',
+  displayName: 'qmky-app',
   preset: 'react-native',
   testRunner: 'jest-jasmine2',
   resolver: '@nrwl/jest/plugins/resolver',

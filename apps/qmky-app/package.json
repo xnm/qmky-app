@@ -1,5 +1,5 @@
 {
-  "name": "qmky",
+  "name": "@qmky/qmky-app",
   "version": "0.0.1",
   "private": true,
   "dependencies": {

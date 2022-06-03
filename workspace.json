@@ -2,7 +2,7 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
-    "qmky": "apps/qmky",
+    "qmky-app": "apps/qmky-app",
     "qmky-e2e": "apps/qmky-e2e"
   }
 }

@@ -18,12 +18,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "ZWEzZDA2YjctZDA5Mi00YWRmLTkxZGYtZGM0NTAyNGM4YzVkfHJlYWQtd3JpdGU="
       }
     }
@@ -36,5 +31,5 @@
       }
     ]
   },
-  "defaultProject": "qmky"
+  "defaultProject": "qmky-app"
 }
