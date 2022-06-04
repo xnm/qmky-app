@@ -3,18 +3,21 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@react-native-async-storage/async-storage": "*",
+    "@react-navigation/bottom-tabs": "*",
+    "@react-navigation/native": "*",
+    "@react-navigation/native-stack": "*",
     "@testing-library/jest-native": "*",
     "@testing-library/react-native": "*",
+    "native-base": "*",
     "react": "*",
     "react-native": "*",
     "react-native-config": "*",
-    "react-native-svg": "*",
-    "@react-native-async-storage/async-storage": "*",
-    "@react-navigation/native": "*",
-    "@react-navigation/native-stack": "*",
-    "react-native-screens": "*",
     "react-native-gesture-handler": "*",
+    "react-native-pager-view": "^6.0.0-rc.2",
     "react-native-safe-area-context": "*",
-    "@react-navigation/bottom-tabs": "*"
+    "react-native-screens": "*",
+    "react-native-svg": "*",
+    "react-native-tab-view": "^3.1.1"
   }
 }
