@@ -93,13 +93,13 @@ export function Square({ navigation }) {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([{
     key: "first",
-    title: "Tab 1"
+    title: "今日热磕"
   }, {
     key: "second",
-    title: "Tab 2"
+    title: "本周磕榜"
   }, {
     key: "third",
-    title: "Tab 3"
+    title: "历史磕榜"
   }]);
 
   const renderTabBar = props => {
@@ -146,7 +146,8 @@ export function Square({ navigation }) {
           // display: 'flex',
           // justifyContent: 'center',
           // alignItems: 'center',
-          backgroundColor: '#3322'
+          backgroundColor: '#3322',
+          zIndex: 999
         }}
       />
   )
@@ -156,6 +157,7 @@ const styles = StyleSheet.create({
   scene: {
     flex: 1,
     height: 600,
+    width: 600,
     backgroundColor: '#000'
   },
  });
