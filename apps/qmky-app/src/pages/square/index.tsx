@@ -126,6 +126,7 @@ export function Square({ navigation }) {
       </Box>;
   };
 
+
   return (
       <TabView
         navigationState={{
@@ -136,11 +137,12 @@ export function Square({ navigation }) {
         renderTabBar={renderTabBar}
         onIndexChange={setIndex}
         initialLayout={initialLayout}
-        lazy
+      
         sceneContainerStyle={{
           // marginTop: StatusBar.currentHeight
-          flex: 1,
-          height: 600,
+          // flex: 1,
+          height: 400,
+          width: 400,
           borderColor: '#000',
           borderWidth: 2,
           // display: 'flex',
