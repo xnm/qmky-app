@@ -48,7 +48,7 @@ PRD（假）：https://www.xiaopiu.com/h5/byId?type=project&id=6298d955ecd2105ef
 
 ### 前端 @sosohime
 
-APP: RN，先开发安卓
+APP: RN，先开发安卓，PGG CCQ
 
 ### 后端 @WormW
 
