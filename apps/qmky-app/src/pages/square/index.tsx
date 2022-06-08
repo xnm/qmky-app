@@ -13,25 +13,7 @@ import {
 } from "native-base";
 import { TabView, SceneMap } from 'react-native-tab-view';
 
-// enum ACTIVE_TABS {
-//   TODAY = 'TODAY',
-//   WEEK = 'WEEK',
-//   ALL = 'ALL'
-// }
 
-// const TABS_CONF: {
-//   key: ACTIVE_TABS,
-//   title: string
-// }[] = [{
-//   key: ACTIVE_TABS.TODAY,
-//   title: '今日磕头榜'
-// }, {
-//   key: ACTIVE_TABS.WEEK,
-//   title: '周磕头榜'
-// }, {
-//   key: ACTIVE_TABS.ALL,
-//   title: '历史磕头'
-// }]
 const FirstRoute = () => {
   return (
     <Box style={[styles.scene, { backgroundColor: '#ccc', minHeight: 200 }]}>
@@ -82,23 +64,24 @@ const initialLayout = {
   width: Dimensions.get("window").width,
 };
 const renderScene = SceneMap({
-  first: (...args) => {
+  today: (...args) => {
     return <FirstRoute />
   },
-  second: SecondRoute,
-  third: ThirdRoute,
+  weekly: SecondRoute,
+  history: ThirdRoute,
 });
 
 export function Square({ navigation }) {
+  const window = useWindowDimensions();
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([{
-    key: "first",
+    key: "today",
     title: "今日热磕"
   }, {
-    key: "second",
+    key: "weekly",
     title: "本周磕榜"
   }, {
-    key: "third",
+    key: "history",
     title: "历史磕榜"
   }]);
 
@@ -139,17 +122,9 @@ export function Square({ navigation }) {
         initialLayout={initialLayout}
       
         sceneContainerStyle={{
-          // marginTop: StatusBar.currentHeight
-          // flex: 1,
           height: 400,
-          width: 400,
+          width: window.width,
           borderColor: '#000',
-          borderWidth: 2,
-          // display: 'flex',
-          // justifyContent: 'center',
-          // alignItems: 'center',
-          backgroundColor: '#3322',
-          zIndex: 999
         }}
       />
   )
@@ -158,8 +133,5 @@ export function Square({ navigation }) {
 const styles = StyleSheet.create({
   scene: {
     flex: 1,
-    height: 600,
-    width: 600,
-    backgroundColor: '#000'
   },
  });
