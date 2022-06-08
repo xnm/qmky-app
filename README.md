@@ -12,9 +12,9 @@ PRD（假）：https://www.xiaopiu.com/h5/byId?type=project&id=6298d955ecd2105ef
 
 <del>方案1：提供注册流程，使用邮箱 / 手机</del>
 
-方案2：免密码，短信验证码直接登录
+方案2：免密码，短信验证码直接登录</del>
 
-方案3：微信授权
+<del>方案3：微信授权</del>
 
 ### 磕头编辑器
 
