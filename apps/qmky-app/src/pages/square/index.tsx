@@ -12,33 +12,30 @@ import {
   Button,
 } from "native-base";
 import { TabView, SceneMap } from 'react-native-tab-view';
+import { KowtowCard } from '../../components/KowtowCard'
 
 
 const FirstRoute = () => {
   return (
-    <Box style={[styles.scene, { backgroundColor: '#ccc', minHeight: 200 }]}>
-      <Flex direction="row" px={16}>
-        <Flex direction="column" pt={16} m={4}>
-          <Image
-            size="lg"
-            source={{
-              uri: 'https://image.flaticon.com/icons/png/512/3079/3079038.png',
-            }}
-            alt="image"
-          />
-        </Flex>
-        <Flex direction="column" pt={16} pr={4}>
-          <Text fontSize={24} py={3}>
-            Skills
-          </Text>
-          <Text pt={4}>
-            Add your skills so that people on the platform can reach you.
-          </Text>
-          <Box py={4} width={32}>
-            <Button size="sm">ADD SKILLS</Button>
-          </Box>
-        </Flex>
-      </Flex>
+    <Box style={[styles.scene, { maxWidth: '100%' }]}>
+      <KowtowCard kowtow={{
+        title: '磕！',
+        creator: '匿名博粉',
+        create_time: '2022-06-01 10:11'
+      }}/>
+      <KowtowCard kowtow={{
+        title: '每日一磕',
+        description: '❤守❤护❤世❤界❤上❤最❤好❤的❤博❤哥❤',
+        creator: 'Reckful',
+        create_time: '2022-06-01 10:11'
+      }}/>
+      <KowtowCard kowtow={{
+        title: '磕磕磕磕磕',
+        description: '❤守❤护❤世❤界❤上❤最❤好❤的❤博❤哥❤',
+        main_img: 'https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201811%2F15%2F20181115231906_eyhpz.jpeg&refer=http%3A%2F%2Fb-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1657443755&t=1cd85790f222e07a2fadec2730d80639',
+        creator: '宝宝',
+        create_time: '2022-06-01 10:11'
+      }}/>
     </Box>
   );
 };
