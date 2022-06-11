@@ -9,7 +9,8 @@ import {
     VStack,
     HStack,
     Container,
-    NativeBaseProvider
+    NativeBaseProvider,
+    Avatar,
 } from 'native-base'
 import { KowtowMessage } from '../types/kowtow'
 
@@ -83,39 +84,17 @@ export const KowtowCard = ({
         >
             {renderKowtowElements()}
             <HStack borderTopWidth={1} pt={2} mt={2}>
+                <Avatar
+                    size="xs"
+                    mr={1}
+                    source={{
+                        uri: "https://bit.ly/broken-link"
+                    }}
+                >
+                    {creator}
+                </Avatar>
                 <Text>{creator} <Text fontSize="xs" color="#666">{create_time}</Text></Text>
             </HStack>
         </Box>
     )
 }
-
-// const styles = StyleSheet.create({
-//     kowtowBox: {
-//         padding: 16,
-//         borderTopWidth: 1,
-//         borderBottomWidth: 1,
-//         borderLeftWidth: 1,
-//         borderRightWidth: 1,
-//         margin: 12,
-//     },
-//     kowtowView: {
-//         borderBottomWidth: 1,
-//         borderBottomColor: '#ccc',
-//     },
-//     bottom: {
-//         backgroundColor: '#eee'
-//     },
-//     title: {
-//         fontSize: 18,
-//         fontWeight: '600',
-//         paddingBottom: 12,
-//     },
-//     description: {
-//         paddingBottom: 12,
-//     },
-//     mainImg: {
-//         height: 100,
-//         width: 100,
-//         borderRadius: 100
-//     }
-// })
