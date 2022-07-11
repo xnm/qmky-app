@@ -40,7 +40,7 @@ export const KowtowCard = ({
     )
 
     const renderKowtowElements = () => {
-        if(description && main_img) {
+        if(main_img) {
             return (
                 <HStack justifyContent="space-between">
                     <Box justifyContent="space-between" flex="1">

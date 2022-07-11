@@ -18,6 +18,8 @@
     "react-native-safe-area-context": "*",
     "react-native-screens": "*",
     "react-native-svg": "*",
-    "react-native-tab-view": "^3.1.1"
+    "react-native-tab-view": "^3.1.1",
+    "react-native-mmkv": "*",
+    "react-native-image-picker": "~4.8.4"
   }
 }

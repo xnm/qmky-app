@@ -162,7 +162,6 @@ export function Square({ navigation }) {
         placement="top-right"
         right={10}
         top={window.height - 160}
-        // bottom={30}
         icon={<AddIcon />}
       />
     </Box>
